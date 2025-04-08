@@ -7,9 +7,9 @@ export const showBalance = async(publicKey : PublicKey) => {
     return response
 };
 
-const pk = new PublicKey('6Bs6RfHvXvC5VUAFFph2Qa6U38evYJChnngWy85W64sp');
+// const pk = new PublicKey('6Bs6RfHvXvC5VUAFFph2Qa6U38evYJChnngWy85W64sp');
 
-(async()=>{
-    const res = await showBalance(pk)
-    console.log(`The balance of address ${pk} is ${res?.lamports!/LAMPORTS_PER_SOL}`)
-})()
+// (async()=>{
+//     const res = await showBalance(pk)
+//     console.log(`The balance of address ${pk} is ${res?.lamports!/LAMPORTS_PER_SOL}`)
+// })()
