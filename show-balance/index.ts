@@ -4,7 +4,7 @@ import { Connection, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js"
 export const showBalance = async(publicKey : PublicKey) => {
     const conn = new Connection("http://localhost:8899", "confirmed")
     const response = await conn.getAccountInfo(publicKey)
-    return response
+    return response?.lamports!/LAMPORTS_PER_SOL
 };
 
 // const pk = new PublicKey('6Bs6RfHvXvC5VUAFFph2Qa6U38evYJChnngWy85W64sp');

@@ -25,7 +25,7 @@ const toPublicKey = new PublicKey('3d8vYbgnqeCf5x4DcwEeKdHorHEdww4ht7pW7k7mgEUq'
 (async()=>{
     const initBalance = await showBalance(toPublicKey)
     console.log(`Initial Balance of ${toPublicKey} is ${initBalance}`)
-    transferSol(fromKeypair, toPublicKey, 2)
+    await transferSol(fromKeypair, toPublicKey, 2)
     const finalBalance = await showBalance(toPublicKey)
     console.log(`Final Balance of ${toPublicKey} is ${finalBalance}`)
 })()
